@@ -18,7 +18,6 @@
 
 8. mvnw clean test
 
-
 ## Git command
 
 1. git init (initial a local repo, doesn't link to remote yet)
@@ -27,7 +26,7 @@
 
 3. git remote add origin https://github.com/<username>/<reponame>.git
 
-4. git add * (add new/updated files to be commited into local repo)
+4. git add \* (add new/updated files to be commited into local repo)
 
 5. git status (to check files that are going to commit into local repo)
 
@@ -49,7 +48,7 @@
 
 14. <always develop in develop branch>
 
-15. git add *
+15. git add \*
 
 16. git commit -m "<commit changes>"
 
@@ -62,14 +61,15 @@
 20. git push -u origin master (in master branch to push merged changes from develop branch to github master branch)
 
 ##Deploy to heroku (must be on master branch locally and remote)
+
 1. Create/use an existing heroku account
 
 2. On your project root, you need a system.properties file.
 
 3. put the following line in system.properties files.
-java.runtime.version=18
+   java.runtime.version=18
 
-4. git add *
+4. git add \*
 
 5. git commit -m "added/updated system.properties"
 
@@ -83,8 +83,8 @@ java.runtime.version=18
 
 10. git push -u heroku master
 
-
 ## Git reset reference
+
 https://www.w3docs.com/learn-git/git-reset.html
 
 echo 'new file content' > test_file
@@ -110,6 +110,7 @@ git reset --soft xxxxxxxxxxx
 git reset --hard
 
 ## Tagging
+
 https://initialcommit.com/blog/git-tag#:~:text=A%20tag%20is%20technically%20a%20type%20of%20ref,git%20tag%20v1.0.0%20%24%20git%20tag%20--list%20v1.0.0
 
 git tag -a v1.0.0
@@ -119,3 +120,5 @@ git tag --list
 git push --tags
 
 git ls-remote --tags
+
+EPAT Aug19
